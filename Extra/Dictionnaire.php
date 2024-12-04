@@ -18,11 +18,24 @@ foreach ($dico as $value) {
 
 echo "<p> Nombre de mots a 15 lettres : " . $compteQuinze . "</p>";
 
-$compte
+$compteMotW = 0;
 
-// foreach($dico as $value){
+foreach($dico as $value){
+    str_contains(strtoupper($value), "W") ? $compteMotW++ : null ;
+};
 
-// }
+echo "<p> Nombre de mots avec un W : " . $compteMotW . "</p>";
+
+$compteMotFinitQ = 0;
+
+foreach($dico as $value){
+    str_ends_with(strtoupper($value), "Q") ? $compteMotFinitQ++ : null ;
+};
+
+echo "<p> Nombre de mots finissant par un Q : " . $compteMotFinitQ . "</p>";
+
+
+
 
 
 

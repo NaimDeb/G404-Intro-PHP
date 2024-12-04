@@ -7,5 +7,6 @@ while ($var <= 10) {
     echo "<br>";
     $var = $var + ($var/2);
 }
+echo $var;
 
 ?>

@@ -94,6 +94,7 @@ echo "<br>";
 $genres = [];
 foreach ($top as $item) {
     $genres[] = $item["category"]["attributes"]["term"];
+    
 }
 
 $genres = array_count_values($genres);
@@ -103,6 +104,8 @@ arsort($genres);
 $genres = array_slice($genres, 0, 1);
 
 echo "Il y'a " . current($genres) . " films d'" . key($genres);
+
+// test
 
 
 

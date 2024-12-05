@@ -11,7 +11,7 @@ function exo3($num1, $num2){
     else {
         return "Les deux nombres sont identiques";
     };
-}
+};
 
 echo exo3(5, 15);
 echo exo3(15, 15);
